@@ -20,7 +20,7 @@ public class School {
     private String country;
 
     @OneToMany(mappedBy = "school", cascade = CascadeType.ALL)
-    private List<Wizard> wizard;
+    private List<Wizard> wizards;
 
     public School() {
     }
@@ -57,11 +57,11 @@ public class School {
         this.country = country;
     }
 
-    public List<Wizard> getWizard() {
-        return wizard;
+    public List<Wizard> getWizards() {
+        return wizards;
     }
 
-    public void setWizard(List<Wizard> wizard) {
-        this.wizard = wizard;
+    public void setWizards(List<Wizard> wizards) {
+        this.wizards = wizards;
     }
 }
